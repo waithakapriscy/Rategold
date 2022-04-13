@@ -1,0 +1,413 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ /*Navigation bar*/
+ .navbar{
+     background-color: aliceblue;
+     border-bottom: 2px solid gray;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     box-shadow: 0 0 3px 0  black;
+ }
+ .navbar-brand h3{
+     border: 2px solid orangered;
+     padding: 5px;
+     font-family: fantasy;
+     letter-spacing: 1px;
+ }
+ .navbar-nav{
+     padding: 10px;
+ }
+
+
+ 
+/****************************--------LANDING PAGE----------**********************************************/
+
+ /*Title Section*/
+ .title{
+     background-color: aliceblue;
+     margin-top: 2%;
+     font-family: Arial, Helvetica, sans-serif;
+     box-shadow: 0px 0px 3px gray;
+ }
+ .title-text h1{
+     padding-top: 8%;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     padding-bottom: 2%;
+     font-weight: bold;
+ }
+ .title-text h1 span{
+     border-top: 4px solid orangered;
+     padding-top: 1%;
+     
+ }
+ .title-text h4{
+     font-family: Arial, Helvetica, sans-serif;
+     padding-top: 2%;
+ }
+ .title-text h5{
+     color: orangered;
+     font-style: italic;
+     opacity: 0.8;
+     padding-bottom: 3%;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .title-text a{
+     text-decoration: none;
+     background-image: linear-gradient(gold , orangered);
+     color: white;
+     padding: 2% 10%;
+     border-radius: 30px;
+     border: 2px solid black;
+ }
+ .title-text a:hover{
+     color: black;
+     background-color: transparent;
+     background-image: none;
+ }
+
+ .title-image img{
+     width: 100%;
+     margin: 5% 0;
+     box-shadow: 1px 1px 3px black;
+     transform: rotateY(15deg);
+ }
+
+ /*About Us section*/
+ .about{
+     background-color: whitesmoke;
+     font-family: Arial, Helvetica, sans-serif;
+     color: black;
+     margin-top: 2%;
+     box-shadow: 0px 0px 3px gray;
+ }
+ .about-image img{
+     width: 100%;
+     box-shadow: 0 0 3px gray;
+     margin: 3% 0;
+ }
+ .about-content{
+     position: relative;
+ }
+ .about-panel h1{
+     text-align: center;
+     font-family: fantasy;
+     letter-spacing: 2px;
+     padding: 10px 0;
+ }
+.about-panel h1 span{
+    padding-bottom: -1%;
+    border-bottom: 5px solid orangered;
+}
+.about-panel p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+@media screen and (min-width: 1000px) {
+    .about-panel{
+        position: absolute;
+        height: 35vmin;
+        background-color: aliceblue;
+        box-shadow: 0 0 10px black;
+        padding: 20px;
+        top: 15%;
+        left: -25%;
+    }
+}
+
+/*Featured product Section*/
+.featuredProducts{
+    background-color: aliceblue;
+     margin-top: 2%;
+     font-family: Arial, Helvetica, sans-serif;
+     box-shadow: 0px 0px 3px gray;
+} 
+.featuredProducts h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-decoration: underline;
+    text-decoration-color: orangered;
+}
+.featuredProduct-image img{
+    width: 100%;
+    box-shadow: 1px 1px 5px black;
+    margin: 3% 0;
+    transform: perspective(900px) rotateY(-15deg);
+    transform-origin: center;
+    transition: 0.5 ease-in;
+}
+.featuredProducts:hover img{
+    opacity: 0.3;
+}
+.featuredProduct-image img:hover{
+    transform: perspective(900px) rotateY(0deg);
+    opacity: 1;
+}
+@media screen and (width: 768px) {
+    .featuredProducts h1{
+        text-decoration: none;
+    }
+    .featuredProducts h1 span{
+        border-bottom: 5px solid orangered;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .featuredProducts h1{
+        text-decoration: none;
+    }
+    .featuredProducts h1 span{
+        border-bottom: 5px solid orangered;
+    }
+    .featuredProduct-image img{
+        -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, rgb(243, 240, 255));
+        margin: 5% 0 50% 0;
+    }
+}
+
+
+/*Design Section*/
+.design{
+    background-color: whitesmoke;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2%;
+    box-shadow: 0px 0px 3px gray;
+}
+.design-message{
+    position: relative;
+}
+.design-image img{
+    width: 100%;
+    box-shadow: 0 0 10px black;
+    margin: 5% 0;
+}
+.design-panel h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 3%;
+}
+.design-panel h1 span{
+    border-bottom: 4px solid orangered;
+}
+@media screen and (min-width: 1000px) {
+    .design-image img{
+        width: 70%;
+    }
+    .design-panel{
+        box-shadow: 1px 1px 10px gray;
+        background-color: aliceblue;
+        padding: 5%;
+        border-radius: 10px;
+        margin-top: 25%;
+        margin-right: -18%;
+    }
+}
+
+/*Footer Section*/
+footer{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    border-top: 4px solid orangered;
+}
+.copyright{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+.contact-icon{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-icon li{
+    margin: 1% 1% -1% 0;
+}
+
+
+
+/****************************--------PRODUCTS PAGE----------**********************************************/
+
+/*Shop Section*/
+.shop{
+    background-color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin-top: 2%;
+}
+.shop h1{
+    font-family: fantasy;
+    letter-spacing: 2px;
+    padding: 2% 0;
+}
+.shop img{
+    width: 5%;
+}
+.shop-image h6{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.shop-image h4{
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+.shop-image img{
+    width: 100%;
+    margin: 5% 0;
+    box-shadow: 0 0 3px black;
+    border-radius: 10px;
+}
+.shop-image img:hover{
+    transform: perspective(800px) rotateY(-20deg);
+}
+
+
+
+/****************************--------CONTACT PAGE----------**********************************************/
+
+
+/*Contact Section*/
+.contacts{
+    background-color: aliceblue;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    box-shadow: 1px 1px 5px gray;
+}
+.contact-info h1{
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    padding-bottom: 3%;
+}
+.contact-info h1 span{
+    border-bottom: 4px solid orangered;
+}
+.contact-details{
+    list-style: none;
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contact-details li{
+    margin-top: 5%;
+}
+.contact-details li i{
+    font-size: 20px;
+    color: orangered;
+}
+.contact-form{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contact-form h1{
+    font-family: fantasy;
+    letter-spacing: 2px;
+    margin-left: 5%;
+}
+.contact-form h1 span{
+    border-bottom: 4px solid orangered;
+}
+
+
+
+/****************************--------SINGLE PRODUCTS PAGES----------**********************************************/
+
+
+/*Single Product Section*/
+.singleProduct{
+    background-color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 2%;
+}
+.breadcrumb{
+    font-size: 22px;
+    margin-top: 3%;
+}
+.singleProduct h1{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: fantasy;
+    letter-spacing: 2px;
+}
+.singleProduct h1 span{
+    border-bottom: 4px solid orangered;
+}
+.singleProduct-image img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.form{
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 3px gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form h1{
+    text-align: center;
+}
+.form-label{
+    margin-left: 5%;
+}
+.form-control{
+    margin-left: 5%;
+}
+.mybtn{
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+@media screen and (max-width:600px) {
+    .mybtn{
+        margin-left: 0%;
+    }
+    .form{
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .form-label{
+        margin-left: 0%;
+    }
+    .form-control{
+        margin-left: 0%;
+    }
+    
+}
+
+/*Same product Gallery*/
+.sameProducts{
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 2%;
+}
+.sameProducts h1{
+    color: black;
+    font-family: fantasy;
+    padding-top: 2%;
+}
+.sameProducts h1 span{
+    border-bottom: 4px solid orangered;
+}
+.product-gallery img{
+    width: 100%;
+    box-shadow: 0 0 3px black;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+.sameProducts:hover img{
+    opacity: 0.3;
+}
+.product-gallery img:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    
+}
+
+
